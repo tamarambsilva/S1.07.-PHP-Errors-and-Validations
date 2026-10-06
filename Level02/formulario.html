@@ -1,0 +1,46 @@
+
+<!--
+Crea un formulario HTML con los campos deseados
+(al menos un campo para el nombre o el nombre de usuario).
+El formulario debe especificar un documento PHP como acción.
+El código de dicho documento PHP debe mostrar los valores de
+los diferentes campos del formulario utilizando variables
+superglobales. Además, almacena algunos de estos valores
+en variables de sesión.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de usuario</title>
+</head>
+<body>
+
+    <h1>Formulario de usuario</h1> <!-- Titulo -->
+
+    <form action="procesar.php" method="POST"> <!-- method="POST": define o método de envio dos dados. O POST envia os dados no corpo da requisição HTTP, em vez de colocá-los diretamente na URL. -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <label for="text">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
+
